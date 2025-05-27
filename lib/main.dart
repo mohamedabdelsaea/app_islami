@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islame_app/layout/hadith.dart';
 import 'package:islame_app/layout/layout.dart';
-import 'package:islame_app/layout/sbha/quran_tap/quran.dart';
-import 'package:islame_app/layout/sbha/quran_tap/quran_details_viwe.dart';
 import 'package:islame_app/layout/radio/radio.dart';
 import 'package:islame_app/layout/sbha/sbha.dart';
 import 'package:islame_app/layout/times/times.dart';
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: Layout.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: {
         SplashScreen.routeName: (BuildContext _) {
           return SplashScreen();
