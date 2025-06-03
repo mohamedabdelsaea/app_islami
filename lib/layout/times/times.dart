@@ -34,7 +34,7 @@ class Times extends StatelessWidget {
                 firstDate: DateTime(2020, 1, 1),
                 lastDate: DateTime(2035, 12, 31),
                 onDateSelected: (date) => print(date),
-                leftMargin: 20,
+                leftMargin: 22,
                 monthColor: Colors.blueGrey,
                 dayColor: Colors.teal[200],
                 activeDayColor: Colors.white,

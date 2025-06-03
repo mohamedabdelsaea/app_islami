@@ -28,10 +28,11 @@ packages:
   calendar_timeline:
     dependency: "direct main"
     description:
-      name: calendar_timeline
-      sha256: "55f47db9791bc28e06f2211d475229d1e802aa4ef0266a2313b66c23a97a53e0"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: d547de82fe77427dae14c896253678cc72014f96
+      url: "https://github.com/muhammadtalhasultan/calendar_timeline.git"
+    source: git
     version: "1.1.3"
   carousel_slider:
     dependency: "direct main"
