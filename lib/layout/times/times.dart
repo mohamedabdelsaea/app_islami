@@ -1,3 +1,4 @@
+import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:islame_app/core/app_color.dart';
 
@@ -26,16 +27,21 @@ class Times extends StatelessWidget {
                 'assets/images/Logo8.png',
                 height: size.height * 0.2,
               ),
-              SizedBox(
-                height: size.height * 0.02,
+              SizedBox(height: size.height * 0.03),
+              CalendarTimeline(
+                showYears: true,
+                initialDate: DateTime.now(),
+                firstDate: DateTime(2020, 1, 1),
+                lastDate: DateTime(2035, 12, 31),
+                onDateSelected: (date) => print(date),
+                leftMargin: 20,
+                monthColor: Colors.blueGrey,
+                dayColor: Colors.teal[200],
+                activeDayColor: Colors.white,
+                activeBackgroundDayColor: Colors.redAccent,
+                selectableDayPredicate: (date) => date.day != 23,
               ),
-              Container(
-                padding: EdgeInsets.all(25),
-                color: AppColor.blacks,
-                child: Image.asset(
-                  'assets/images/times.png',
-                ),
-              ),
+              SizedBox(height: size.height * 0.03),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: Text(
